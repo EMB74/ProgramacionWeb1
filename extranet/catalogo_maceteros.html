@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Catálogo de maceteros</title>
     <link href="../index/css/estilo.css" rel="stylesheet" type="text/css">
+    <script src="../index/js/js.js"></script>
   </head>
 <body><left>
 
@@ -56,8 +57,16 @@
               </div>
 
               <p>
-                    <input type="submit" value="Ingresar comentario" method="post"/>
-                   <form><input type="text" size="50"  name="comentario" value="Escriba acá su comentario"><br></form>
+                   <p>
+                  <form ><input id="comentario" type="text" size="50"  name="comentario" 
+                   onblur="if(this.value=='') this.value='Escriba acá su comentario'";
+
+                  
+
+                   onfocus="if(this.value=='Escriba acá su comentario') this.value='';" > <br></form>
+                  <input type="submit" value="Ingresar comentario" onclick="validaComentario()" />
+
+              </p>
               </p>
               </p>
               </td>
